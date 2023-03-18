@@ -1,0 +1,28 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer span {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.theme-dark {
+  background-color: #1A1A1A;
+}
+
+.theme-dark span{
+  color: #fdfdfd;
+}
+
+/* Estilos para o tema claro */
+.theme-light{
+  background-color: #fdfdfd;
+}
+
+.theme-light span {
+  color: #1A1A1A;
+}

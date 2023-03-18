@@ -1,0 +1,27 @@
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1e1f;
+}
+
+button {
+  margin: 20px 10px 0px 0px;
+}
+
+.main {
+  width: 70%;
+  text-align: left;
+  padding: 10px;
+  color: white;
+  margin-left: 18vw;
+}
+
+.mainButton {
+  background-color: darkorchid;
+  color: whitesmoke;
+}
+
+.secondaryButton{
+  background-color: whitesmoke;
+  color: darkorchid;
+}

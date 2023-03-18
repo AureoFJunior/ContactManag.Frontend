@@ -1,0 +1,40 @@
+.logout-link {
+  top: 20px;
+}
+
+.sidenav {
+  background-color: #1A1A1A;
+  width: 10rem;
+  margin-top: -70px;
+  margin-left: -10px;
+}
+
+.sidenav a {
+  color: #fdfdfd;
+}
+
+.sidenav i {
+  padding-right: 10px;
+}
+
+.a:hover {
+  color: darkorchid;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.sidenav a:hover {
+  color: darkorchid;
+}
+
+.sidenav .logo {
+  max-height: 100px;
+  width: 80%;
+  align-items: left;
+}
+
+.sidenav .logo {
+  margin: 15px;
+}

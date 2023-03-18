@@ -1,0 +1,41 @@
+<mat-sidenav-container class="container-fluid">
+  <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+      <mat-nav-list class="nav-list">
+        <span>
+          <a>
+              <img src="assets/contactManag.png" alt="logo" class="logo">
+          </a>
+        </span>
+
+          <a mat-list-item routerLink="/home">
+              <i class="material-icons">
+                  home
+              </i>
+              Home
+          </a>
+          <a mat-list-item routerLink="/persons">
+              <i class="material-icons">
+                  group
+              </i>
+              Persons
+          </a>
+          <a mat-list-item routerLink="/contacts">
+              <i class="material-icons">
+                  phone
+              </i>
+              Contacts
+          </a>
+
+          <a mat-list-item routerLink="/" class="logout-link">
+            <i class="material-icons">
+                logout
+            </i>
+            Logout
+        </a>
+      </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="content">
+      <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

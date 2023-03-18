@@ -1,0 +1,21 @@
+<app-nav></app-nav>
+<mat-card class="main mat-elevation-z8">
+    <mat-card-title>
+      Edit Contacts
+    </mat-card-title>
+
+    <form>
+        <mat-form-field>
+            <input matInput [(ngModel)]="contacts.value" name="value" required>
+            <mat-placeholder>Value</mat-placeholder>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput [(ngModel)]="contacts.type" name="type" required>
+          <mat-placeholder>Type</mat-placeholder>
+      </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="updateContact()" class="mainButton">Save</button>
+    <button mat-raised-button (click)="cancel()" class="secondaryButton">Cancel</button>
+</mat-card>

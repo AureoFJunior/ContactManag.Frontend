@@ -1,0 +1,15 @@
+button {
+  margin-top: 5vh;
+  margin-right: 18.70vw;
+  float: right;
+}
+
+.mainButton {
+  background-color: darkorchid;
+  color: whitesmoke;
+}
+
+.secondaryButton{
+  background-color: whitesmoke;
+  color: darkorchid;
+}

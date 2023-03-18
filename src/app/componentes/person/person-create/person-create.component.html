@@ -1,0 +1,26 @@
+<app-nav></app-nav>
+<div class="container">
+  <div class="col-12">
+    <mat-card class="main">
+      <mat-card-title>
+        New Person
+      </mat-card-title>
+
+      <form>
+        <mat-form-field>
+          <input matInput [(ngModel)]="person.name" name="name" required>
+          <mat-placeholder>Name</mat-placeholder>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput [mask]="'0000/00/00'" #inputBirthDate (change)="updateBirthDate(inputBirthDate.value)"
+          [(ngModel)]="person.birthDate" name="birthDate" required>
+          <mat-placeholder>Birthdate</mat-placeholder>
+        </mat-form-field>
+      </form>
+
+      <button mat-raised-button (click)="createPerson()" class="mainButton">Save</button>
+      <button mat-raised-button (click)="cancel()" class="secondaryButton">Cancel</button>
+    </mat-card>
+  </div>
+</div>
