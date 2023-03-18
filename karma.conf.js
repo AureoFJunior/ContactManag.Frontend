@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/oni-health.frontend'),
+      dir: require('path').join(__dirname, './coverage/contact-manag.frontend'),
       subdir: '.',
       reporters: [
         { type: 'html' },
