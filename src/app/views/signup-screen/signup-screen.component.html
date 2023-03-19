@@ -11,11 +11,11 @@
     <div class="form-container">
       <div class="form">
         <h2 class="form-title">Register</h2>
-        <input type="text" class="form-input" placeholder="Login de Usuário" [(ngModel)]="user.userName" name="userName" required>
-        <input class="form-input" placeholder="Nome" [(ngModel)]="user.firstName" name="firstName" required>
-        <input class="form-input" placeholder="Sobrenome" [(ngModel)]="user.lastName" name="lastName" required>
+        <input type="text" class="form-input" placeholder="User login" [(ngModel)]="user.userName" name="userName" required>
+        <input class="form-input" placeholder="First Name" [(ngModel)]="user.firstName" name="firstName" required>
+        <input class="form-input" placeholder="Last Name" [(ngModel)]="user.lastName" name="lastName" required>
         <input type="email" class="form-input" placeholder="Email" [(ngModel)]="user.email" name="email">
-        <input type="password" class="form-input" placeholder="Senha" [(ngModel)]="user.password" name="password" [type]="hide ? 'password' : 'text'" required>
+        <input type="password" class="form-input" placeholder="Password" [(ngModel)]="user.password" name="password" [type]="hide ? 'password' : 'text'" required>
         <button id="btnHide" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
