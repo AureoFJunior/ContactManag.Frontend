@@ -11,7 +11,7 @@ import { Contacts } from './contacts-model';
 })
 export class ContactService {
 
-  baseUrl: string = 'http://34.224.22.218/api/Contact'
+  baseUrl: string = 'https://54.242.15.80/api/Contact'
 
   constructor(private snackBar: MatSnackBar, private httpClient: HttpClient, private storageService: StorageService) { }
 
