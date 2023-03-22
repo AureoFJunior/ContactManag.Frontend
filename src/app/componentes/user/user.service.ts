@@ -11,7 +11,7 @@ import { StorageService } from 'src/app/services/storage.service';
 })
 export class UserService {
 
-  baseUrl: string = 'https://54.242.15.80/api/User';
+  baseUrl: string = 'http//54.242.15.80/api/User';
   authUser: boolean = false;
   userObv: Observable<User> = new Observable<User>()
 

@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Contacts } from '../../contact/contacts-model';
 import { ContactService } from '../../contact/contact.service';
 import { Person } from '../person-model';
-import { PersonService } from '../person-service';
+import { PersonService } from '../person.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 

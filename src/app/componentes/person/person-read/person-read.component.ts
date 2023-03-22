@@ -3,7 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Person } from '../person-model';
-import { PersonService } from '../person-service';
+import { PersonService } from '../person.service';
 
 @Component({
   selector: 'app-person-read',

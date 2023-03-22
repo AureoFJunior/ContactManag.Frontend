@@ -10,8 +10,8 @@ import { StorageService } from 'src/app/services/storage.service';
 })
 export class PersonService {
 
-  baseUrl: string = 'https://54.242.15.80/api/Person'
-  baseContactUrl: string = 'https://54.242.15.80/api/Contact'
+  baseUrl: string = 'http//54.242.15.80/api/Person'
+  baseContactUrl: string = 'http//54.242.15.80/api/Contact'
 
   constructor(private snackBar: MatSnackBar, private httpClient: HttpClient, private storageService: StorageService) {}
 

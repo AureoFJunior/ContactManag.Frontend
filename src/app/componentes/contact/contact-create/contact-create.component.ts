@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Contacts } from '../contacts-model';
 import { ContactService } from '../contact.service';
 import { Person } from '../../person/person-model';
-import { PersonService } from '../../person/person-service';
+import { PersonService } from '../../person/person.service';
 import { FormControl } from '@angular/forms';
 
 @Component({
