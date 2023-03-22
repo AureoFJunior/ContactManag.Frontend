@@ -11,7 +11,7 @@ import { StorageService } from 'src/app/services/storage.service';
 })
 export class UserService {
 
-  baseUrl: string = 'http//54.242.15.80/api/User';
+  baseUrl: string = 'http://3.82.108.20/api/User';
   authUser: boolean = false;
   userObv: Observable<User> = new Observable<User>()
 
@@ -77,6 +77,7 @@ export class UserService {
   login(user: User): Observable<any> {
     const headers = new HttpHeaders()
 
+    console.log(this.baseUrl)
     let login = this.httpClient.get<UserDTO>(`${this.baseUrl}/LogInto/${user.userName}/${user.password}`, { headers: headers }).pipe(
       map((obj) => obj),
       catchError((e) => this.errorhandler(e))

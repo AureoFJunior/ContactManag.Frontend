@@ -11,7 +11,7 @@ import { Contacts } from './contacts-model';
 })
 export class ContactService {
 
-  baseUrl: string = 'http//54.242.15.80/api/Contact'
+  baseUrl: string = 'http://3.82.108.20/api/Contact'
 
   constructor(private snackBar: MatSnackBar, private httpClient: HttpClient, private storageService: StorageService) { }
 
@@ -32,7 +32,6 @@ export class ContactService {
     headers = headers.append('Access-Control-Allow-Origin', '*')
     headers = headers.append('Authorization', 'Bearer ' + token)
 
-    console.log(Contact)
     return this.httpClient.post<Contacts>(`${this.baseUrl}/AddContact`, Contact, { headers: headers }).pipe(
       map((obj) => obj),
       catchError((e) => this.errorhandler(e))
